@@ -7,13 +7,14 @@ services:
     image: nginx:latest
     restart: always
     volumes:
-      - ./public:/var/www/html/public
       - ./docker/local/http/nginx.conf:/etc/nginx/nginx.conf
       - ./docker/local/http/log:/var/log/nginx
     ports:
       - "8000:80"
     networks:
       - go_network
+    depends_on:
+      - backend
 
   backend:
     container_name: backend
