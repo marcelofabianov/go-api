@@ -24,8 +24,8 @@ services:
     image: marcelofabianov/go
     volumes:
       - .:/backend
-      - ./docker/local/zsh/.zshrc:/home/node/.zshrc
-      - ./docker/local/zsh/.zsh_history:/home/node/.zsh_history
+      - ./docker/local/zsh/.zshrc:/home/dev/.zshrc
+      - ./docker/local/zsh/.zsh_history:/home/dev/.zsh_history
     networks:
       - go_network
     ports:

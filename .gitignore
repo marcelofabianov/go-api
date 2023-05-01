@@ -101,10 +101,11 @@ yarn-error.log
 # Env
 .env
 
-# Docker
-/.zsh/.zsh_history
-
 # Extensions
 *.sh
 *.pfx
 *.pem
+
+# Docker
+docker-compose.yml
+Dockerfile
