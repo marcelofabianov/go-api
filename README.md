@@ -7,7 +7,7 @@ Objetivo é criar uma api rest de crud de customers.
 ## Instalação
 
 ```bash
-cp docker/local/.env.example .env && cp docker/local/docker-compose.example.yml docker-compose.yml
+rm -rf .git && cp docker/local/.env.example .env && cp docker/local/docker-compose.example.yml docker-compose.yml
 ```
 
 ## Uso
