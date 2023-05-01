@@ -23,6 +23,7 @@ services:
       context: .
       dockerfile: ./docker/local/go/Dockerfile
     image: marcelofabianov/go
+    working_dir: /backend
     volumes:
       - .:/backend
       - ./docker/local/zsh/.zshrc:/home/dev/.zshrc
